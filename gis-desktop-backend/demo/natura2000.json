@@ -1,0 +1,11 @@
+{
+  "name": "Natura2000",
+  "group": "geoserver",
+  "url": "https://gis.arso.gov.si/geoserver-beta/SI.ARSO.NATURA/ows",
+  "properties" : {
+    "layers": "NATURA_2000",
+    "format": "image/png",
+    "transparent": true,
+    "opacity": 0.5
+  }
+}
