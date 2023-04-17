@@ -42,7 +42,9 @@ jobs:
     #- name: Install Playwright Browsers
     #  run: npx playwright install --with-deps --prefix frontend-electron
     - name: Run Playwright tests
-      run: npx playwright test --prefix frontend-electron
+      with:
+        path: ./frontend-electron
+        run: npx playwright test
 
     - name: Upload Test Results
       if: always()
