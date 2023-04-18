@@ -28,7 +28,7 @@ let window;
 let electronApp;
 
 test.beforeAll(async () => {
-    electronApp = await electron.launch({ args: ['./public/main.js'] });
+    electronApp = await electron.launch({ args: ['main.js'] });
     window = await electronApp.firstWindow();
 });
 
