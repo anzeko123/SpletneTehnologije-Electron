@@ -19,6 +19,9 @@ jobs:
         
     - name: Install dependencies
       run: npm ci
+    - name: Install Playwright Browsers
+      run: npx playwright install --with-deps
+
     
     #- name: E2E Test for Electron
     #  run: npm run ui-test --prefix frontend-electron
@@ -31,4 +34,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: screenshots
-        path: tests/screenshots/**
+        path: test-results/**
