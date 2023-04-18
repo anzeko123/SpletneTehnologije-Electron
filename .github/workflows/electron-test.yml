@@ -37,8 +37,8 @@ jobs:
       with:
         node-version: 14
         
-    #- name: Install dependencies
-    #  run: npm ci --prefix frontend-electron
+    - name: Install dependencies
+      run: npm ci --prefix frontend-electron
     
     #- name: E2E Test for Electron
     #  run: npm run ui-test --prefix frontend-electron
