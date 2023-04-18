@@ -20,8 +20,8 @@ jobs:
     - name: Install dependencies for frontend
       run: npm ci --prefix frontend-electron
     
-    #- name: Start backend server
-    #  run: npm start --prefix gis-desktop-backend
+    - name: Start backend server
+      run: npm start --prefix gis-desktop-backend
     
   electron-test:
     runs-on: ubuntu-latest
