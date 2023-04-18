@@ -42,8 +42,7 @@ jobs:
     
     #- name: E2E Test for Electron
     #  run: npm run ui-test --prefix frontend-electron
-    #- name: Install Playwright Browsers
-    #  run: npx playwright install --with-deps --prefix frontend-electron
+
     - name: Run Playwright tests
       run: npx playwright test
 
