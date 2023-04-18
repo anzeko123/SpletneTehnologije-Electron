@@ -22,9 +22,12 @@ jobs:
     
     #- name: Start backend server
     #  run: npm start --prefix gis-desktop-backend
-     
+    
   electron-test:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./app
 
     steps:
     - uses: actions/checkout@v2
