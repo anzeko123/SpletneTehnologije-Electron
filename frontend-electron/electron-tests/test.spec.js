@@ -1,10 +1,13 @@
+
 const { _electron: electron, test, expect} = require('@playwright/test');
 
 let window;
 let electronApp;
 
 test.beforeAll(async () => {
+
     electronApp = await electron.launch({ args: ['main.js'] });
+
     window = await electronApp.firstWindow();
 });
 
