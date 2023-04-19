@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "proxy": "http://localhost:3001/api/v1/geojson/get-all",
   "private": true,
-  "main": "public/main.js",
+  "main": "main.js",
   "dependencies": {
     "@playwright/test": "^1.32.3",
     "@testing-library/jest-dom": "^5.16.5",
